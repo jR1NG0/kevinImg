@@ -1,4 +1,10 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pin.name %>
+</p>
 
 <p>
   <strong>Photo:</strong>
@@ -10,5 +16,6 @@
   <%= @pin.description %>
 </p>
 
-<%= link_to 'Edit', edit_pin_path(@pin) %> |
-<%= link_to 'Back', pins_path %>
+<p><%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %></p>
+</div>

@@ -6,8 +6,9 @@
       
         <div class="col-md-3">
           <div class="thumbnail">
-           <%= pin.description %>
+           <%= pin.name%>
            <%= image_tag(pin.photo, :class => 'img-resposive') %>
+           <%= pin.description %>
            <div class="buttons" style="margin-top:10px; margin-bottom:10px;"></div>
            <%= link_to 'Show', pin, :class => 'btn' %>
            <%= link_to 'Edit', edit_pin_path(pin), :class => 'btn' %>
